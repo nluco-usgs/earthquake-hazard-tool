@@ -82,11 +82,11 @@ var TimeHorizonInput = function (params) {
   _this.createViewSkeleton = function () {
     _this.el.innerHTML = [
       '<label>',
-        'Time Horizon',
-        '<small class="input-help">Return period in years</small>',
+        'Return Period',
+        '<small class="input-help">Years</small>',
         '<input type="text" class="input-time-horizon-years"/>',
         '<small class="usa-input-error-message">',
-          'Time horizon must be between 0 and 10,000 years.',
+          'Return period must be between 0 and 10,000 years.',
         '</small>',
         '<div class="input-time-horizon-buttons button-group">',
           _this.horizons.map(_this.createButtonMarkup).join(''),
